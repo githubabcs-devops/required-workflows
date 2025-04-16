@@ -15,6 +15,7 @@ jobs:
       - name: 'Dependency Review'
         uses: actions/dependency-review-action@v4
         with:
-          fail-on-severity: 'critical'
+          comment-summary-in-pr: "always"
+          fail-on-severity: 'moderate'
           allow-licenses: MIT, Apache-2.0
           #deny-licenses: LGPL-2.0, BSD-2-Clause
